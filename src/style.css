@@ -1,0 +1,67 @@
+:root {
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: rgb(54, 56, 78);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  --Tomato: hsl(4, 100%, 67%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Charcoal-Grey);
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+}
+.imgNewsletter {
+  margin: 20px;
+  height: 90%;
+  justify-content: right;
+}
+.imgNewsletter img {
+  height: 460px;
+}
+.container_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  padding-left: 40px;
+  margin-top: 40px;
+}
+.h2 {
+  color: var(--Dark-Slate-Grey);
+}
+.emailLabel {
+  display: flex;
+  justify-content: space-between;
+}
+.champs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.error {
+  font-size: 14px;
+  color: red;
+  display: none;
+}
+.buttonSubscribe {
+  background-color: var(--Dark-Slate-Grey);
+}
+.buttonSubscribe:hover {
+  background-color: var(--Tomato);
+}
+.textList {
+  font-size: 15px;
+  display: flex;
+  margin-left: 8px;
+}
