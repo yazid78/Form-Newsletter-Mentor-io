@@ -129,7 +129,7 @@ body {
   .container {
     flex-wrap: wrap-reverse;
     justify-content: center;
-    gap: 10px;
+    gap: 0px;
   }
   .text {
     padding-left: 20px;
@@ -145,7 +145,7 @@ body {
   .imgNewsletter {
     margin: 0;
     width: 100%;
-    height: 350px;
+    height: 300px;
   }
   #mobileText {
     padding-left: 0;
@@ -164,16 +164,13 @@ body {
     align-items: center;
   }
   .containerTextModal button {
-    margin-top: 200px;
+    margin-top: 300px;
   }
-
+  .containerTextModal {
+    margin-top: 0;
+  }
   body {
     background-color: white;
     height: auto;
-  }
-}
-@media (max-width: 470px) {
-  .container {
-    gap: 20px;
   }
 }
