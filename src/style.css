@@ -119,7 +119,12 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
-
+.emailLabel {
+  color: var(--Dark-Slate-Grey);
+  font-size: 16px;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
 @media (max-width: 750px) {
   .container {
     flex-wrap: wrap-reverse;
@@ -158,5 +163,14 @@ body {
   }
   .containerTextModal {
     margin-top: 150px;
+  }
+  body {
+    background-color: white;
+    height: auto;
+  }
+}
+@media (max-width: 470px) {
+  .container {
+    gap: 50px;
   }
 }
