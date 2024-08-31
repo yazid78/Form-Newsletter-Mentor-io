@@ -12,7 +12,7 @@
 
   <body>
     <div class="test mx-auto container grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-      <div class="max-w-xl lg:max-w-lg text">
+      <div id="mobileText" class="max-w-xl lg:max-w-lg text">
         <h2 class="h2 text-3xl font-bold tracking-tight text-black sm:text-4xl">Stay updated!</h2>
         <p class="mt-4 text-black">Join 60,000+ product managers receiving monthly updates on:</p>
         <ul>
@@ -58,7 +58,7 @@
       </div>
 
       <div class="flex imgNewsletter">
-        <img src="/assets/images/illustration-sign-up-desktop.svg" alt="" srcset="" />
+        <img id="imgNewslettermobile" src="/assets/images/illustration-sign-up-desktop.svg" alt="" srcset="" />
       </div>
     </div>
     <div class="modal">
@@ -67,8 +67,8 @@
           <img src="/assets/images/icon-success.svg" alt="" srcset="" />
           <h1 class="titleModal">Thanks for subcribing!</h1>
           <p>
-            A confirmation email has been sent to ash@loremcompagny.com. Please open it and click the button inside to
-            confirm your subscription.
+            A confirmation email has been sent to <span class="emailSend"></span>. Please open it and click the button
+            inside to confirm your subscription.
           </p>
           <button id="btnDismiss">Dismiss message</button>
         </div>

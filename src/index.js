@@ -3,7 +3,8 @@ const email = document.getElementById("email-address");
 const error = document.querySelector(".error");
 const modal = document.querySelector(".modal");
 const dismiss = document.getElementById("btnDismiss");
-const test = document.querySelector(".test");
+const newsletter = document.querySelector(".test");
+const emailSend = document.querySelector(".emailSend");
 
 let regex = new RegExp(/^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/im);
 
@@ -15,12 +16,13 @@ function handleSubmit() {
   } else {
     error.style.display = "none";
     modal.style.visibility = "visible";
-    test.style.visibility = "hidden";
+    newsletter.style.visibility = "hidden";
+    emailSend.textContent = email.value;
   }
 }
 function Dismiss() {
   modal.style.visibility = "hidden";
-  test.style.visibility = "visible";
+  newsletter.style.visibility = "visible";
 }
 submitButton.addEventListener("click", handleSubmit);
 dismiss.addEventListener("click", Dismiss);
